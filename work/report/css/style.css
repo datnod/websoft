@@ -6,14 +6,23 @@ html {
 }
 
 body {
-    width: fit-content;
-    height: fit-content;
-    margin: 8px auto;
     background: rgb(2, 40, 73);
+    width: auto;
+    max-width: 600px;
+    margin: 8px auto;
+    color: #ffffff;
 }
 
-p{
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+section p{
+    display: inline-block;
+    width: 66%;
     color: #ffffff;
+    padding: auto;  
 }
 
 h1{
@@ -22,8 +31,11 @@ h1{
 
 h2{
     color: #ffffff;
+    
 }
+
 
 a{
     color: #ffffff;
+
 }
