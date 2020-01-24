@@ -7,7 +7,22 @@ html {
 
 body {
     margin: 8px auto;
-    background: #0074D9;
-    font: #ffffff;
+    background: rgb(2, 40, 73);
     width: 700px;
+}
+
+p{
+    color: #ffffff;
+}
+
+h1{
+    color: #ffffff;
+}
+
+h2{
+    color: #ffffff;
+}
+
+a{
+    color: #ffffff;
 }
