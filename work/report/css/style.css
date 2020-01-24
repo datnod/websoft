@@ -6,9 +6,10 @@ html {
 }
 
 body {
+    width: fit-content;
+    height: fit-content;
     margin: 8px auto;
     background: rgb(2, 40, 73);
-    width: 700px;
 }
 
 p{
