@@ -5,7 +5,7 @@
     'use strict';
 
     //Fetch
-    fetch('https://api.scb.se/UF0109/v2/skolenhetsregister/sv/kommun/1283')
+    fetch('1283.json')
         .then((response) => {
             return response.json();
         })
