@@ -34,22 +34,22 @@ function dragElement(elmnt) {
         console.log("clientX: " + e.clientX + ", clientY: " + e.clientY)
 
         //Right
-        if (pos3 > 1250) {
-            elmnt.style.left = 1200 + "px";
+        if (pos3 > 1235) {
+            elmnt.style.left = 1234 + "px";
         }
         //Down
-        if (pos4 > 560) {
-            elmnt.style.top = 560 + "px";
+        if (pos4 > 590) {
+            elmnt.style.top = 589 + "px";
 
         }
         //Left
-        if (pos3 < 30) {
-            elmnt.style.left = 20 + "px";
+        if (pos3 < 15) {
+            elmnt.style.left = 14 + "px";
 
         }
         //Up
-        if (pos4 < 37) {
-            elmnt.style.top = 37 + "px";
+        if (pos4 < 12) {
+            elmnt.style.top = 11 + "px";
         }
 
         // set the element's new position:

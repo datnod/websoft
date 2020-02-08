@@ -59,7 +59,6 @@ a {
 #mydiv {
     position: absolute;
     margin: 0 auto;
-    z-index: 9;
     top: 0;
     left: 0;
     text-align: center;
@@ -71,7 +70,5 @@ a {
 #mydivheader {
     margin: 0 auto;
     cursor: move;
-    background-color: rgb(rgb(46, 16, 16));
-    border-radius: 25px;
     color: #fff;
 }
