@@ -6,14 +6,8 @@ function dragElement(elmnt) {
         pos2 = 0,
         pos3 = 0,
         pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
-        /* if present, the header is where you move the DIV from:*/
-        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-    } else {
-        /* otherwise, move the DIV from anywhere inside the DIV:*/
-        elmnt.onmousedown = dragMouseDown;
-    }
 
+    elmnt.onmousedown = dragMouseDown;
 
 
     function dragMouseDown(e) {
@@ -35,7 +29,25 @@ function dragElement(elmnt) {
         pos2 = pos4 - e.clientY;
         pos3 = e.clientX;
         pos4 = e.clientY;
+        console.log(elmnt);
+        console.log("pos1: " + pos1 + ", pos2: " + pos2 + ", pos3: " + pos3 + ", pos4: " + pos4);
+        console.log("clientX: " + e.clientX + ", clientY: " + e.clientY)
 
+        if (pos3 > 1250) {
+            elmnt.style.left = 1200 + "px";
+        }
+        if (pos4 > 560) {
+            elmnt.style.top = 560 + "px";
+
+        }
+        if (pos3 < 30) {
+            elmnt.style.left = 20 + "px";
+
+        }
+        if (pos4 < 37) {
+            elmnt.style.top = 37 + "px";
+
+        }
         // set the element's new position:
         elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
