@@ -60,6 +60,8 @@ a {
     position: absolute;
     margin: 0 auto;
     z-index: 9;
+    top: 0;
+    left: 0;
     text-align: center;
     background-color: rgb(119, 0, 255);
     border-radius: 5px;
