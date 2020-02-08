@@ -1,8 +1,27 @@
 /*
  * Comments are written as C++ style. 
  */
-html {
-    overflow-y: scroll;
+
+button {
+    background-color: white;
+    border: white;
+    border-radius: 25px;
+}
+
+table,
+td,
+th {
+    border: 1px solid white;
+    padding: 6px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
 }
 
 body {
@@ -13,29 +32,44 @@ body {
     color: #ffffff;
 }
 
-.responsive{
+.responsive {
     width: 100%;
     height: auto;
 }
 
-section p{
+section p {
     display: inline-block;
     width: 66%;
     color: #ffffff;
-    padding: auto;  
+    padding: auto;
 }
 
-h1{
+h1 {
     color: #ffffff;
 }
 
-h2{
+h2 {
     color: #ffffff;
-    
 }
 
-
-a{
+a {
     color: #ffffff;
+}
 
+#mydiv {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 9;
+    text-align: center;
+    background-color: rgb(119, 0, 255);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#mydivheader {
+    margin: 0 auto;
+    cursor: move;
+    background-color: rgb(rgb(46, 16, 16));
+    border-radius: 25px;
+    color: #fff;
 }
