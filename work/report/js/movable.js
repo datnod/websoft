@@ -47,7 +47,7 @@ function dragElement(elmnt) {
             elmnt.style.left = 9 + "px";
 
         }
-        //Up
+        //Up 
         if (pos4 < 10) {
             elmnt.style.top = 9 + "px";
         }
