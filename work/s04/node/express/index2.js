@@ -1,25 +1,21 @@
 /**
- * A sample Express server with static resources.
+ * A sample Express server.
  */
 "use strict";
 
+// Enable server to run on port selected by the user selected
+// environment variable DBWEBB_PORT
 const port = process.env.DBWEBB_PORT || 1337;
-const path = require("path");
+
+// Set upp Express server
 const express = require("express");
 const app = express();
 const routeIndex = require("./route/index.js");
-const routeToday = require("./route/today.js");
 const middleware = require("./middleware/index.js");
 
-app.set("view engine", "ejs");
-
 app.use(middleware.logIncomingToConsole);
-app.use(express.static(path.join(__dirname, "public")));
 app.use("/", routeIndex);
-app.use("/today", routeToday);
 app.listen(port, logStartUpDetailsToConsole);
-
-
 
 /**
  * Log app details to console when starting up.
@@ -35,7 +31,7 @@ function logStartUpDetailsToConsole() {
             // Routes registered directly on the app
             routes.push(middleware.route);
         } else if (middleware.name === "router") {
-            // Routes added as router middleware
+            // Routes added as router middleware 
             middleware.handle.stack.forEach((handler) => {
                 let route;
 
