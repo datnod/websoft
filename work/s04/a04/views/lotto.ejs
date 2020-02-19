@@ -1,0 +1,14 @@
+<h1>Lotto Draw</h1>
+
+
+
+<button id="clickButtonLotto">CLICK HERE</button>
+
+<p id="lottoClick" style.display="none">
+</p>
+
+<script>
+    document.getElementById("clickButtonLotto").onclick = function show() {
+        document.getElementById("lottoClick").innerHTML = "Your lotto draw is: <%= lotto %>";
+    }
+</script>

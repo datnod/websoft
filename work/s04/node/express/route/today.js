@@ -6,6 +6,7 @@
 var express = require("express");
 var router = express.Router();
 
+
 router.get("/", (req, res) => {
     let data = {};
 
@@ -13,5 +14,7 @@ router.get("/", (req, res) => {
 
     res.render("today", data);
 });
+
+
 
 module.exports = router;
