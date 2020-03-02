@@ -1,30 +1,6 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="HandheldFriendly" content="true">
-    <title>Report </title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favic.ico">
-</head>
+<?php $headerTitle = "Report"; include 'view/header.php';?>
 
 <body>
-
-
-
-    <header>
-        <nav>
-            <a href="me.html">Me</a> |
-            <a href="report.html">Report</a> |
-            <a href="about.html">About</a> |
-            <a href="schools.html">Schools</a> |
-        </nav>
-    </header>
-
-
 
     <article>
 
@@ -125,23 +101,7 @@
 
         <section>
             <h2>S05</h2>
-            <p>Assignment 5</p>
-            <p>How do you feel about PHP as a programming language?</p>
-            <p>I will be honest, it is kinda confusing and very different from what I am used to with Java. I sense some similarites with JavaScript when it comes to PHP as a programming langauge. I find it a bit difficult because it is unlike Java but documentation
-                makes it easier to bridge the gap. </p>
-            <p>Can you compare PHP to other languages you know?</p>
-            <p> I guess the most comparable I can think of is JavaScript even if it is not the same it feels similar. I cannot really compare it to Java or so even if php uses if statements and such it feels to different.</p>
-            <p>Describe how you took on the coding exercise, what grade did you aim for and are you satisfied with the result?</p>
-            <p>Well I had already installed XAMPP a long time before, but since I already had MySQL installed. I figured I would use that instead of installing another DB on XAMPP. I had some issues with port taken but the reason for this was I had already
-                installed MySQL and I fiddled with it by installing a XAMPP MySQL version. And it did nothing that my current MySQL could not do so I uninstalled it and just rebinded my PATH for MySQL so I could run it in CMD. I followed the guidelines
-                for the excersise and watched the lectures on YouTube meanwhile. And I also used MySQL Workbench to edit my a coloumn for adding ID and make it a PK + AI as per instructions, With 3 coloumns + 7 rows. In total I would say 2h-3h hours.
-                </p>
-            <p>What is your TIL for this course section?</p>
-            <p>Hmm, well declaring variables using PHP and P0D for connecting to MySQL. Also that it can use variables for methods like JavaScript. Some other things I learned are SQL queries on how they ben be saved in a script using php. I learned that
-                XAMPP is not really all that useful if a person already have the programs installed, such as MySQL or Apache.
-
-            </p>
-
+            <p>Here is the text for this section.</p>
         </section>
 
         <section>
@@ -178,7 +138,7 @@
 
     </article>
 
-
+    <?php include 'view/footer.php';?>
 
     <div id="mydiv">
         <div id="mydivheader">Movable object</div>
