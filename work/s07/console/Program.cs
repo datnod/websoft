@@ -5,7 +5,7 @@ using System.Data;
 
 namespace console
 {
-    class RetrieveAccount
+    class Program
     {
         static bool flag = true;
         static void Main(string[] args)
