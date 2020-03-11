@@ -8,3 +8,23 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<table>
+    <tr>
+        <th>Numbers</th>
+        <th>Label</th>
+        <th>Balance</th>
+        <th>Owner</th>
+        
+        @foreach (var acc in Model.Accounts)
+        {   
+            <tr>
+                <td>@acc.Number</td>
+                <td>@acc.Label</td>
+                <td>@acc.Balance</td>
+                <td>@acc.Owner</td>
+            </tr>
+        }
+
+    </tr>
+</table>

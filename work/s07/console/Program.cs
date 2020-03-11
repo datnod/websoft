@@ -53,8 +53,8 @@ namespace console
 
          static void ReadAccounts()
         {
-            String file = "C://Users/lirid/websoft/work/data/account.json";
-
+            String file = "../data/account.json";
+            
             using (StreamReader r = new StreamReader(file))
             {
                 string data = r.ReadToEnd();
@@ -71,8 +71,6 @@ namespace console
                 Console.WriteLine(headerColoumns);    
                 Console.WriteLine("---------------------------------------------");
                 foreach (var acc in json) {
-               // Console.WriteLine(account);
-
                        string rowValues = String.Format
                        ("{0, 10} {1, 10} {2, 10} {3, 10}", acc.Number, acc.Balance, acc.Label, acc.Owner);
                         Console.WriteLine(rowValues);
@@ -85,7 +83,7 @@ namespace console
 
         static void ReadAccountByNumber(){
             
-            String file = "C://Users/lirid/websoft/work/data/account.json";
+            String file = "../data/account.json";
 
             using (StreamReader r = new StreamReader(file))
             {
